@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF/metatype/org.testsite.customlogin.authentication.impl.CustomExternalLoginModuleFactory">
+    <OCD id="org.testsite.customlogin.authentication.impl.CustomExternalLoginModuleFactory" name="%org.testsite.customlogin.authentication.impl.CustomExternalLoginModuleFactory.name" description="%org.testsite.customlogin.authentication.impl.CustomExternalLoginModuleFactory.description">
+        <AD id="jaas.ranking" type="Integer" default="50" name="%org.testsite.customlogin.authentication.impl.CustomExternalLoginModuleFactory.jaas.ranking.name" description="%org.testsite.customlogin.authentication.impl.CustomExternalLoginModuleFactory.jaas.ranking.description"/>
+        <AD id="jaas.controlFlag" type="String" default="SUFFICIENT" name="%org.testsite.customlogin.authentication.impl.CustomExternalLoginModuleFactory.jaas.controlFlag.name" description="%org.testsite.customlogin.authentication.impl.CustomExternalLoginModuleFactory.jaas.controlFlag.description"/>
+        <AD id="jaas.realmName" type="String" name="%org.testsite.customlogin.authentication.impl.CustomExternalLoginModuleFactory.jaas.realmName.name" description="%org.testsite.customlogin.authentication.impl.CustomExternalLoginModuleFactory.jaas.realmName.description"/>
+        <AD id="idp.name" type="String" name="%org.testsite.customlogin.authentication.impl.CustomExternalLoginModuleFactory.idp.name.name" description="%org.testsite.customlogin.authentication.impl.CustomExternalLoginModuleFactory.idp.name.description"/>
+        <AD id="sync.handlerName" type="String" default="default" name="%org.testsite.customlogin.authentication.impl.CustomExternalLoginModuleFactory.sync.handlerName.name" description="%org.testsite.customlogin.authentication.impl.CustomExternalLoginModuleFactory.sync.handlerName.description"/>
+    </OCD>
+    <Designate pid="org.testsite.customlogin.authentication.impl.CustomExternalLoginModuleFactory" factoryPid="org.testsite.customlogin.authentication.impl.CustomExternalLoginModuleFactory">
+        <Object ocdref="org.testsite.customlogin.authentication.impl.CustomExternalLoginModuleFactory"/>
+    </Designate>
+</metatype:MetaData>
