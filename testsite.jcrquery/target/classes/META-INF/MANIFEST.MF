@@ -1,0 +1,31 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1443324661131
+Build-Jdk: 1.8.0_51
+Built-By: Admin
+Bundle-Description: Core bundle for testsite
+Bundle-ManifestVersion: 2
+Bundle-Name: testsite - Core
+Bundle-SymbolicName: org.mindtree.testsite.core
+Bundle-Version: 0.0.1.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.mindtree.testsite.core.service;version="0.0.1",org.m
+ indtree.testsite.core.servlets;uses:="javax.servlet,org.apache.sling.ap
+ i,org.apache.sling.api.resource,org.apache.sling.api.servlets,org.apach
+ e.sling.jcr.api";version="0.0.1"
+Import-Package: com.day.cq.commons;version="[5.7,6)",javax.jcr;version="
+ [2.0,3)",javax.jcr.query;version="[2.0,3)",javax.jcr.query.qom;version=
+ "[2.0,3)",javax.servlet,org.apache.sling.api;version="[2.3,3)",org.apac
+ he.sling.api.resource;version="[2.5,3)",org.apache.sling.api.servlets;v
+ ersion="[2.1,3)",org.apache.sling.jcr.api;version="[2.2,3)",org.slf4j;v
+ ersion="[1.5,2)"
+Provide-Capability: osgi.service;effective:=active;objectClass="javax.se
+ rvlet.Servlet";service.vendor=Adobe
+Require-Capability: osgi.service;effective:=active;filter:="(objectClass
+ =org.apache.sling.jcr.api.SlingRepository)",osgi.service;effective:=act
+ ive;filter:="(objectClass=org.apache.sling.api.resource.ResourceResolve
+ rFactory)",osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.6))"
+Service-Component: OSGI-INF/org.mindtree.testsite.core.service.impl.Vani
+ tyUrlUtilImpl.xml,OSGI-INF/org.mindtree.testsite.core.servlets.QuerySer
+ vlet.xml
+Sling-Model-Packages: org.mindtree.testsite.core
+Tool: Bnd-2.3.0.201405100607

@@ -1,0 +1,3 @@
+org\mindtree\testsite\core\servlets\QueryServlet.class
+org\mindtree\testsite\core\service\VanityUrlUtil.class
+org\mindtree\testsite\core\service\impl\VanityUrlUtilImpl.class
