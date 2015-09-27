@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component immediate="true" name="org.mindtree.customworkflow.core.service.impl.SampleParticipantStepChooserImpl">
+        <implementation class="org.mindtree.customworkflow.core.service.impl.SampleParticipantStepChooserImpl"/>
+        <service servicefactory="false">
+            <provide interface="com.adobe.granite.workflow.exec.ParticipantStepChooser"/>
+        </service>
+        <property name="service.description" value="Sample Implementation of dynamic participant chooser."/>
+        <property name="chooser.label" value="Sample Workflow Participant Chooser"/>
+        <property name="service.vendor" value="Adobe"/>
+        <property name="service.pid" value="org.mindtree.customworkflow.core.service.impl.SampleParticipantStepChooserImpl"/>
+    </scr:component>
+</components>
