@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1447793632660
+Build-Jdk: 1.8.0_51
+Built-By: Admin
+Bundle-Description: Custom Configuration Service bundle for testsite
+Bundle-ManifestVersion: 2
+Bundle-Name: testsite - Configuraion Service
+Bundle-SymbolicName: org.mindtree.testsite.configservice
+Bundle-Version: 0.0.1.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.testsite.core.service;version="0.0.1"
+Import-Package: org.apache.sling.commons.osgi;version="[2.2,3)",org.slf4
+ j;version="[1.5,2)",org.testsite.core.service;version="[0.0,1)"
+Provide-Capability: osgi.service;effective:=active;objectClass="org.test
+ site.core.service.impl.ConfigurationServiceImpl";service.vendor=Adobe
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.6))"
+Service-Component: OSGI-INF/org.testsite.core.service.impl.Configuration
+ ServiceImpl.xml
+Sling-Model-Packages: org.testsite.configservice
+Tool: Bnd-2.3.0.201405100607
