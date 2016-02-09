@@ -1,0 +1,15 @@
+<h2>This is Multi Field Touch UI Sightly Component</h2></br>
+<div data-sly-use.mbeanObj="org.test.testmulti.core.models.TouchMultiComponent">
+    <p>
+
+		<div data-sly-test="${!mbeanObj.mBean}">Add values in Dialog</div>
+    	<div data-sly-test="${mbeanObj.mBean}" data-sly-list.items="${mbeanObj.mBean}">
+    		<h3>${items.dashboard}</h3>
+    		<div data-sly-list.itemsList="${items.items}">
+    			<p><b>page:</b> ${itemsList.page}</p>
+        		<p><b>path:</b> ${itemsList.path}</p>
+            </div>
+      	</div>
+
+	</p>
+</div>

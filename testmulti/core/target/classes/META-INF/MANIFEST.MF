@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1454991328803
+Build-Jdk: 1.8.0_60
+Built-By: Admin
+Bundle-Description: Core bundle for Test Multi
+Bundle-ManifestVersion: 2
+Bundle-Name: Test Multi - Core
+Bundle-SymbolicName: org.test.multi.core
+Bundle-Version: 0.0.1.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.test.testmulti.core.models;version="0.0.1";uses:="co
+ m.adobe.cq.sightly",org.test.testmulti.core;version="1.0"
+Import-Package: com.adobe.cq.sightly;version="[2.2,3)",javax.jcr;version
+ ="[2.0,3)",org.apache.sling.api.resource;version="[2.5,3)",org.apache.s
+ ling.commons.json;version="[2.0,3)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.6))"
+Sling-Model-Packages: org.test.testmulti.core
+Tool: Bnd-2.3.0.201405100607
