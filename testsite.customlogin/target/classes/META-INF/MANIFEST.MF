@@ -1,0 +1,35 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1443125173965
+Build-Jdk: 1.8.0_60
+Built-By: Admin
+Bundle-Description: Custom External Login bundle for testsite
+Bundle-ManifestVersion: 2
+Bundle-Name: testsite - Custom External Login
+Bundle-SymbolicName: org.mindtree.testsite.customlogin
+Bundle-Version: 0.0.1.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Import-Package: javax.annotation,javax.jcr;version="[2.0,3)",javax.secur
+ ity.auth,javax.security.auth.callback,javax.security.auth.login,javax.s
+ ecurity.auth.spi,org.apache.felix.jaas;version="[1.0,2)",org.apache.jac
+ krabbit.api.security.user;version="[2.3,3)",org.apache.jackrabbit.oak.a
+ pi;version="[1.0,2)",org.apache.jackrabbit.oak.namepath;version="[1.0,2
+ )",org.apache.jackrabbit.oak.osgi;version="[1.0,2)",org.apache.jackrabb
+ it.oak.plugins.value;version="[1.0,2)",org.apache.jackrabbit.oak.spi.se
+ curity;version="[1.0,2)",org.apache.jackrabbit.oak.spi.security.authent
+ ication;version="[1.0,2)",org.apache.jackrabbit.oak.spi.security.authen
+ tication.external;version="[1.0,2)",org.apache.jackrabbit.oak.spi.white
+ board;version="[1.0,2)",org.osgi.framework;version="[1.5,2)",org.osgi.s
+ ervice.component;version="[1.1,2)",org.slf4j;version="[1.5,2)"
+Provide-Capability: osgi.service;effective:=active;objectClass="org.apac
+ he.felix.jaas.LoginModuleFactory";jaas.ranking=50;jaas.controlFlag=SUFF
+ ICIENT;sync.handlerName=default;service.vendor=Adobe
+Require-Capability: osgi.service;effective:=active;filter:="(objectClass
+ =org.apache.jackrabbit.oak.spi.security.authentication.external.Externa
+ lIdentityProviderManager)",osgi.service;effective:=active;filter:="(obj
+ ectClass=org.apache.jackrabbit.oak.spi.security.authentication.external
+ .SyncManager)",osgi.service;effective:=active;filter:="(objectClass=jav
+ ax.jcr.Repository)",osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.6))"
+Service-Component: OSGI-INF/org.testsite.customlogin.authentication.impl
+ .CustomExternalLoginModuleFactory.xml
+Sling-Model-Packages: org.testsite.customlogin
+Tool: Bnd-2.3.0.201405100607

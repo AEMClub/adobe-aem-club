@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component enabled="true" name="com.mindtree.vanitypath.servlets.SitesListImpl">
+        <implementation class="com.mindtree.vanitypath.servlets.SitesListImpl"/>
+        <service servicefactory="false">
+            <provide interface="javax.servlet.Servlet"/>
+        </service>
+        <property name="sling.servlet.paths" value="/services/siteslist"/>
+        <property name="sling.servlet.methods" value="GET"/>
+        <property name="service.pid" value="com.mindtree.vanitypath.servlets.SitesListImpl"/>
+        <reference name="resolverFactory" interface="org.apache.sling.api.resource.ResourceResolverFactory" cardinality="1..1" policy="static" bind="bindResolverFactory" unbind="unbindResolverFactory"/>
+        <reference name="repo" interface="org.apache.sling.jcr.api.SlingRepository" cardinality="1..1" policy="static" bind="bindRepo" unbind="unbindRepo"/>
+    </scr:component>
+    <scr:component enabled="true" name="com.mindtree.vanitypath.servlets.VanityUrlUtilImpl">
+        <implementation class="com.mindtree.vanitypath.servlets.VanityUrlUtilImpl"/>
+        <service servicefactory="false">
+            <provide interface="javax.servlet.Servlet"/>
+        </service>
+        <property name="sling.servlet.paths" value="/services/vanityurlcheck"/>
+        <property name="sling.servlet.methods">
+            GET
+            POST
+        </property>
+        <property name="service.pid" value="com.mindtree.vanitypath.servlets.VanityUrlUtilImpl"/>
+    </scr:component>
+</components>

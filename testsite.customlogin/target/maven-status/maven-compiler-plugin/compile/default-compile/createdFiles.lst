@@ -1,0 +1,2 @@
+org\testsite\customlogin\authentication\impl\CustomExternalLoginModule.class
+org\testsite\customlogin\authentication\impl\CustomExternalLoginModuleFactory.class

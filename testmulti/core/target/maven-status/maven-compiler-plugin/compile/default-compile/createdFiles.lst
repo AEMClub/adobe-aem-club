@@ -1,0 +1,9 @@
+org\test\testmulti\core\package-info.class
+org\test\testmulti\core\models\TouchMultiComponent.class
+org\test\testmulti\core\listeners\SimpleResourceListener.class
+org\test\testmulti\core\models\HelloWorldModel.class
+org\test\testmulti\core\filters\LoggingFilter.class
+org\test\testmulti\core\servlets\SimpleServlet.class
+org\test\testmulti\core\models\ItemsBean.class
+org\test\testmulti\core\models\TouchMultiBean.class
+org\test\testmulti\core\schedulers\SimpleScheduledTask.class

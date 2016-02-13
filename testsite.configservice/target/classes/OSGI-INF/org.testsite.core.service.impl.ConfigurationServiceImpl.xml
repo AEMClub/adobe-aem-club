@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0">
+    <scr:component immediate="true" name="org.testsite.core.service.impl.ConfigurationServiceImpl" activate="activate">
+        <implementation class="org.testsite.core.service.impl.ConfigurationServiceImpl"/>
+        <service servicefactory="false">
+            <provide interface="org.testsite.core.service.impl.ConfigurationServiceImpl"/>
+        </service>
+        <property name="multifield"/>
+        <property name="simplefield"/>
+        <property name="service.vendor" value="Adobe"/>
+        <property name="service.pid" value="org.testsite.core.service.impl.ConfigurationServiceImpl"/>
+    </scr:component>
+</components>

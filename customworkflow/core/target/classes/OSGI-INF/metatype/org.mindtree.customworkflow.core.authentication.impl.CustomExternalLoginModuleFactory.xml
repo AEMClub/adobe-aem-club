@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF/metatype/org.mindtree.customworkflow.core.authentication.impl.CustomExternalLoginModuleFactory">
+    <OCD id="org.mindtree.customworkflow.core.authentication.impl.CustomExternalLoginModuleFactory" name="%org.mindtree.customworkflow.core.authentication.impl.CustomExternalLoginModuleFactory.name" description="%org.mindtree.customworkflow.core.authentication.impl.CustomExternalLoginModuleFactory.description">
+        <AD id="jaas.ranking" type="Integer" default="50" name="%org.mindtree.customworkflow.core.authentication.impl.CustomExternalLoginModuleFactory.jaas.ranking.name" description="%org.mindtree.customworkflow.core.authentication.impl.CustomExternalLoginModuleFactory.jaas.ranking.description"/>
+        <AD id="jaas.controlFlag" type="String" default="SUFFICIENT" name="%org.mindtree.customworkflow.core.authentication.impl.CustomExternalLoginModuleFactory.jaas.controlFlag.name" description="%org.mindtree.customworkflow.core.authentication.impl.CustomExternalLoginModuleFactory.jaas.controlFlag.description"/>
+        <AD id="jaas.realmName" type="String" name="%org.mindtree.customworkflow.core.authentication.impl.CustomExternalLoginModuleFactory.jaas.realmName.name" description="%org.mindtree.customworkflow.core.authentication.impl.CustomExternalLoginModuleFactory.jaas.realmName.description"/>
+        <AD id="idp.name" type="String" name="%org.mindtree.customworkflow.core.authentication.impl.CustomExternalLoginModuleFactory.idp.name.name" description="%org.mindtree.customworkflow.core.authentication.impl.CustomExternalLoginModuleFactory.idp.name.description"/>
+        <AD id="sync.handlerName" type="String" default="default" name="%org.mindtree.customworkflow.core.authentication.impl.CustomExternalLoginModuleFactory.sync.handlerName.name" description="%org.mindtree.customworkflow.core.authentication.impl.CustomExternalLoginModuleFactory.sync.handlerName.description"/>
+    </OCD>
+    <Designate pid="org.mindtree.customworkflow.core.authentication.impl.CustomExternalLoginModuleFactory" factoryPid="org.mindtree.customworkflow.core.authentication.impl.CustomExternalLoginModuleFactory">
+        <Object ocdref="org.mindtree.customworkflow.core.authentication.impl.CustomExternalLoginModuleFactory"/>
+    </Designate>
+</metatype:MetaData>

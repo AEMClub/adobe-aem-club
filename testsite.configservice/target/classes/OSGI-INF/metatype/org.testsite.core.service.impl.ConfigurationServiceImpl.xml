@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF/metatype/org.testsite.core.service.impl.ConfigurationServiceImpl">
+    <OCD id="org.testsite.core.service.impl.ConfigurationServiceImpl" name="%org.testsite.core.service.impl.ConfigurationServiceImpl.name" description="%org.testsite.core.service.impl.ConfigurationServiceImpl.description">
+        <AD id="multifield" type="String" name="%org.testsite.core.service.impl.ConfigurationServiceImpl.multifield.name" description="%org.testsite.core.service.impl.ConfigurationServiceImpl.multifield.description" cardinality="2147483647"/>
+        <AD id="simplefield" type="String" name="%org.testsite.core.service.impl.ConfigurationServiceImpl.simplefield.name" description="%org.testsite.core.service.impl.ConfigurationServiceImpl.simplefield.description"/>
+    </OCD>
+    <Designate pid="org.testsite.core.service.impl.ConfigurationServiceImpl">
+        <Object ocdref="org.testsite.core.service.impl.ConfigurationServiceImpl"/>
+    </Designate>
+</metatype:MetaData>
