@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Properties"
+    xtype="panel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <text
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Header"
+            name="./text"
+            xtype="textfield"/>
+        <tag-1
+            jcr:primaryType="cq:Widget"
+            allowBlank="false"
+            fieldDescription="News will be shown for above keyword, Use only one keyword without space. Example: &lt;i>google&lt;/i>"
+            fieldLabel="Keyword -1"
+            name="./tag1"
+            xtype="textfield"/>
+        <tag-2
+            jcr:primaryType="cq:Widget"
+            allowBlank="false"
+            fieldDescription="News will be shown for above keyword, Use only one keyword without space. Example: &lt;i>google&lt;/i>"
+            fieldLabel="Keyword -2"
+            name="./tag2"
+            xtype="textfield"/>
+        <tag-3
+            jcr:primaryType="cq:Widget"
+            allowBlank="false"
+            fieldDescription="News will be shown for above keyword, Use only one keyword without space. Example: &lt;i>google&lt;/i>"
+            fieldLabel="Keyword -3"
+            name="./tag3"
+            xtype="textfield"/>
+        <tag-4
+            jcr:primaryType="cq:Widget"
+            allowBlank="false"
+            fieldDescription="News will be shown for above keyword, Use only one keyword without space. Example: &lt;i>google&lt;/i>"
+            fieldLabel="Keyword -4"
+            name="./tag4"
+            xtype="textfield"/>
+    </items>
+</jcr:root>
