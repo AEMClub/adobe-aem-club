@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2016-02-24T22:46:14.735+05:30"
+        cq:lastModifiedBy="admin"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="English"
+        sling:resourceType="sightlypagination/components/structure/page"
+        pageTitle="New Project">
+        <logo
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="sightlypagination/components/structure/logo"/>
+        <title
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="sightlypagination/components/content/title"/>
+        <topnav
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="sightlypagination/components/structure/topnav"/>
+        <par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/parsys">
+            <sightly_pagination
+                jcr:created="{Date}2016-02-24T19:22:05.226+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2016-02-24T22:46:14.695+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="sightlypagination/components/content/sightly-pagination"
+                header="Sightly Component"
+                text="/content/geometrixx/en"/>
+        </par>
+        <image jcr:primaryType="nt:unstructured">
+            <file/>
+        </image>
+    </jcr:content>
+</jcr:root>

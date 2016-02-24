@@ -1,0 +1,54 @@
+<style>
+.author{
+color:grey;
+}
+.nextprevious {
+
+    color: coral;
+    font-size: 1.2em;
+    border: 1px solid;
+    padding: 1.5px;
+}
+.pages a {
+    margin-left: 10px;
+    border: 1px dashed green;
+    padding: 2px;
+    width: 5px;
+}
+.pages {
+
+    font-size: 1.2em;
+    margin: 8px 40px;
+}
+.error{
+color:red
+}
+</style>
+<div data-sly-test="${!properties.header || !properties.text}" >
+    <h3 class="author">Please author values in dialog</h3>
+    </div>
+    <div data-sly-test="${properties.header && properties.text}" >
+    <h3>${properties.header}</h3> 
+    <p data-sly-use.hello="com.sightlypagination.core.models.HelloWorldModel">
+        <ul data-sly-list.items="${hello.page}">
+            <li><a href="${items.path}" target="_blank" >${items.title}
+                </a>
+            </li>
+        </ul>
+    </p>
+
+
+    <div data-sly-use.d="${ 'sightly-pagination.js' @ matches=hello.message}">
+        <div data-sly-test="${d.check}">
+            <a  class="nextprevious" data-sly-test="${d.previous!=''}" href="${currentPage.path @ addSelectors=d.previous}.html"> Previous </a>
+            <div class="pages" data-sly-list.val="${d.pages}"> 
+               <a href="${ '{0}.{1}.html' @ format=[currentPage.path,val[0]]}"> ${val[1]} </a>
+            </div>
+            <a class="nextprevious" data-sly-test="${d.next!=''}" href="${currentPage.path @ addSelectors=d.next}.html"> Next </a>
+        </div>
+        <div data-sly-test="${!d.check}">
+       <p class="error">Invalid selector for pagination..!!</p>
+        </div>
+
+    </div>
+</div>
