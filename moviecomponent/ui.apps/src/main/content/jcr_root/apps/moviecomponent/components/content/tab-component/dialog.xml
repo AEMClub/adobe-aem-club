@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    autoWidth="true"
+    title="Properties"
+    width="1500"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <panel
+            jcr:primaryType="cq:Panel"
+            title="Tab Configurations">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <main-header
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="false"
+                    defaultValue="Welcome, have a great movie time"
+                    fieldLabel="Main header text"
+                    fieldWidth="400"
+                    name="./header"
+                    xtype="textfield"/>
+                <movie-details
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="false"
+                    defaultValue="Movie"
+                    fieldLabel="Movie Details"
+                    fieldWidth="400"
+                    name="./movieDetails"
+                    xtype="textfield"/>
+                <experience
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="false"
+                    defaultValue="Movie Experience"
+                    fieldLabel="Experience"
+                    name="./experience"
+                    xtype="textfield"/>
+                <reviews
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="false"
+                    defaultValue="Reviews"
+                    fieldLabel="Movie Reviews"
+                    name="./reviews"
+                    xtype="textfield"/>
+                <contact-us
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="false"
+                    defaultValue="Get in touch"
+                    fieldLabel="Contact Us"
+                    name="./contact"
+                    xtype="textfield"/>
+                <random-movie
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="false"
+                    defaultValue="Upcoming..."
+                    fieldLabel="Upcoming Movies"
+                    name="./random"
+                    xtype="textfield"/>
+            </items>
+        </panel>
+        <movie-details
+            jcr:primaryType="cq:Panel"
+            title="Movie Details">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <image
+                    jcr:primaryType="cq:Widget"
+                    allowUpload="false"
+                    ddGroups="[media]"
+                    fileNameParameter="./fileName"
+                    fileReferenceParameter="./fileReference"
+                    height="200"
+                    name="./file"
+                    title="Movie Image"
+                    xtype="html5smartimage"/>
+                <video
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Trailer Video URL"
+                    name="./video"
+                    rootPath="/content/dam/moviecomponent/trailers"
+                    xtype="pathfield"/>
+                <name
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Movie Name"
+                    name="./movieName"
+                    xtype="textfield"/>
+                <release-date
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Release Date"
+                    name="./releaseDate"
+                    xtype="textfield"/>
+                <directors
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Director"
+                    name="./directors"
+                    xtype="textfield"/>
+                <length
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Movie Length"
+                    name="./movieLength"
+                    xtype="textfield"/>
+                <production-house
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Production House"
+                    name="./productionHouse"
+                    xtype="textfield"/>
+                <languge
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Language"
+                    name="./language"
+                    xtype="textfield"/>
+                <note
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Special Note"
+                    name="./note"
+                    xtype="textarea"/>
+            </items>
+        </movie-details>
+        <experience
+            jcr:primaryType="cq:Panel"
+            title="Experience">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <rating
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Our Rating"
+                    name="./rating"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <_x0030_-star
+                            jcr:primaryType="cq:Widget"
+                            text="0 Star (Waste)"
+                            value="0"/>
+                        <_x0031_-star
+                            jcr:primaryType="cq:Widget"
+                            text="1 Star (Poor)"
+                            value="1"/>
+                        <_x0032_-star
+                            jcr:primaryType="cq:Widget"
+                            text="2 Star (Average)"
+                            value="2"/>
+                        <_x0033_-star
+                            jcr:primaryType="cq:Widget"
+                            text="3 Star (Good)"
+                            value="3"/>
+                        <_x0034_-star
+                            jcr:primaryType="cq:Widget"
+                            text="4 Star (very Good)"
+                            value="4"/>
+                        <_x0035_-star
+                            jcr:primaryType="cq:Widget"
+                            text="5 Star (Excellent)"
+                            value="5"/>
+                    </options>
+                </rating>
+                <experience
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Our Experience"
+                    name="./movieExperience"
+                    xtype="richtext"/>
+            </items>
+        </experience>
+        <reviews
+            jcr:primaryType="cq:Panel"
+            title="Reviews">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <review1person
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Review 1 - Person"
+                    name="./review1person"
+                    xtype="textfield"/>
+                <review1description
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Review 1 - Description"
+                    name="./review1description"
+                    xtype="textarea"/>
+                <review2person
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Review 2 - Person"
+                    name="./review2person"
+                    xtype="textfield"/>
+                <review2description
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Review 2 - Description"
+                    name="./review2description"
+                    xtype="textarea"/>
+            </items>
+        </reviews>
+        <random-movie
+            jcr:primaryType="cq:Panel"
+            title="Upcoming Movies">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <movies-path
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="false"
+                    fieldDescription="Select the path from where banner will be displayed"
+                    fieldLabel="Path to Movies"
+                    name="./moviesPath"
+                    rootPath="/content/dam/moviecomponent"
+                    xtype="pathfield"/>
+                <number
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="false"
+                    fieldLabel="Number of Random Movies"
+                    name="./maxMovies"
+                    regex="/[0-9]/"
+                    xtype="textfield"/>
+            </items>
+        </random-movie>
+        <contact-us
+            jcr:primaryType="cq:Panel"
+            title="Contact Us">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <description
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Description"
+                    name="./contactDescription"
+                    xtype="textarea"/>
+                <name
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Contact Person"
+                    name="./contactPerson"
+                    xtype="textfield"/>
+                <position
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Person Position"
+                    name="./contactPosition"
+                    xtype="textfield"/>
+                <email
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Person Email"
+                    name="./contactEmail"
+                    xtype="textfield"/>
+                <contact
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Contact Number"
+                    name="./contactNumber"
+                    regex="/[0-9]/"
+                    xtype="textfield"/>
+            </items>
+        </contact-us>
+    </items>
+</jcr:root>

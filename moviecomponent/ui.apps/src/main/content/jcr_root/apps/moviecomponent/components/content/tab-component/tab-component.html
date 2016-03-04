@@ -1,0 +1,149 @@
+<style>
+p#experience {
+    font-size: 2.2em;
+    font-family: sans-serif;
+    color: rgba(255, 78, 78, 0.56);
+    margin: 15px 4%;
+}
+
+p#rating {
+font-size: 1.5em;
+color: cadetblue;
+margin: 15px 4%;
+}
+p#experiencetext {
+font-size: 1.5em;
+color: cadetblue;
+margin: 15px 4%;
+
+}
+div#experiencetext {
+font-size: 1.3em;
+color: darkgray;
+margin: 0px 38px;
+}
+#rating span {
+line-height: 35px !important;
+color: #234567 !important;
+}
+p#reviewer {
+margin: 0px 50px;
+color: grey;
+}
+div#reviewtext {
+padding: 5% 3% 0% 3%;
+color: rgba(207, 47, 47, 0.7);
+font-size: 1.4em;
+font-family: initial;
+}
+#mvideo {
+padding-left: 150px;
+    padding-top: 41px;
+    border: 1px solid #456722;
+    padding-bottom: 41px;
+}
+div#moviedata {
+    margin: 0px 150px;
+}
+#moviedata p {
+    color: brown;
+    font-size: 1.3em;
+}
+#moviedata span {    font-size: 2.0em;
+    font-family: fantasy;
+    line-height: 50px !important;
+    color: rgb(211, 234, 154) !important;
+}
+</style>
+<section role="main">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="twelve columns">
+                <article>
+                    <h2 style="margin: 6px 5%">${properties.header}</h2>
+                    <div class='tabs tabs_animate'>
+                        <ul class='horizontal'>
+                            <li><a href="#tab-1">${properties.movieDetails}</a>
+                            </li>
+                            <li><a href="#tab-2">${properties.experience}</a>
+                            </li>
+                            <li><a href="#tab-3">${properties.reviews}</a>
+                            </li>
+                            <li><a href="#tab-4">${properties.contact}</a>
+                            </li>
+                            <li><a href="#tab-5">${properties.random}</a>
+                            </li>
+                        </ul>
+                        <div id='tab-1'>
+                        <div data-sly-test="${properties.fileReference && properties.video }" id="mvideo">
+
+                            <video id="my-video" class="video-js" controls preload="auto" width="640" height="264" poster="${properties.fileReference}" data-setup="{}">
+                                <source src="${properties.video}" type='video/mp4'>
+                                        <p class="vjs-no-js">
+                                            To view this video please enable JavaScript, and consider upgrading to a web browser that
+                                            <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                                        </p>
+                            </video>
+                            </div>
+                            <div id="moviedata">
+                                <p><span>Movie : ${properties.movieName} <span> </p>
+                                <p>Release Date : ${properties.releaseDate} </p>
+                                <p>Director : ${properties.directors} </p>
+                                <p>Length : ${properties.movieLength}</p>
+                                <p>Production House : ${properties.productionHouse}</p>
+                                <p>Language : ${properties.language}</p>
+                                <p>Note : ${properties.note}</p>
+                            </div>
+                        </div>
+                        <div id='tab-2'>
+                            <p id="experience">Our Experience with ${properties.movieName}</p>
+                            <p id="rating">Ratings <img src="/content/dam/moviecomponent/rating/${properties.rating}-star.png" />
+                            </p>
+                            <p id="rating">Experience..... </p>
+                            <div id="experiencetext"> ${properties.movieExperience @ context="html"}</div>
+                        </div>
+                        <div id='tab-3'>
+
+                            <div id="reviewtext"><i> ${properties.review2description @ context="html"}</i>
+                            </div>
+                            <p id="reviewer"> -- by ${properties.review1person}</p>
+
+
+
+                            <div id="reviewtext"><i> ${properties.review2description @ context="html"}</i>
+                            </div>
+                            <p id="reviewer"> -- by ${properties.review2person}</p>
+
+                        </div>
+                        <div id='tab-4'>
+                        <div id="experiencetext">${properties.contactDescription}</div>
+                            <p id="rating"><span>Contact Person Name </span> ${properties.contactPerson}</p>
+                            <p id="rating"><span>Contact Person Position </span>${properties.contactPosition}</p>
+                            <p id="rating"><span>Contact Person Email </span>${properties.contactEmail}</p>
+                            <p id="rating"><span>Contact Person Number </span>${properties.contactNumber}</p>
+
+                        </div>
+                        <div id='tab-5'>
+                        <div data-sly-test="${ !properties.maxMovies || !properties.moviesPath}">
+                        <p style="margin-left:150px;margin-top:40px"> Please author Path to Movies and Number of Movies</p>
+                        </div>
+                        <div data-sly-test="${properties.maxMovies && properties.moviesPath}" data-sly-use.v="com.moviecomponent.moviecomponent.core.service.MovieService">
+                            <p data-sly-list="${v.files}"> 
+                                <img src="${item}" height=250 width=400 style="padding:4px"></img>
+                            </p>   
+                        </div>
+
+                        </div>
+                  </div>
+                </article>
+                </div>
+            </div>
+
+
+
+        </div>
+</section>
+
+

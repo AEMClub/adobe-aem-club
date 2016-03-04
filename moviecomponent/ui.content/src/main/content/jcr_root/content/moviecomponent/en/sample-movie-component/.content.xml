@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2016-02-20T00:55:31.939+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/apps/moviecomponent/templates/page-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Sample Movie Component"
+        sling:resourceType="moviecomponent/components/structure/page">
+        <logo
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="moviecomponent/components/structure/logo"/>
+        <title
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="moviecomponent/components/content/title"/>
+        <topnav
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="moviecomponent/components/structure/topnav"/>
+        <par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/parsys">
+            <text
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="moviecomponent/components/content/text"
+                text="&lt;p>This is a content page&lt;/p>"
+                textIsRich="true"/>
+            <tab_component
+                jcr:created="{Date}2016-02-19T23:32:52.635+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2016-02-20T00:55:31.919+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="moviecomponent/components/content/tab-component"
+                contact="Get in touch"
+                contactDescription="Its a great and must watch movie"
+                contactEmail="bob@bob.com"
+                contactNumber="3333333"
+                contactPerson="Bob"
+                contactPosition="Senior Associate"
+                directors="Tim Miller"
+                experience="Movie Experience"
+                fileReference="/content/dam/moviecomponent/trailers/deadpool-poster.jpg"
+                header="Welcome, have a great movie time"
+                imageRotate="0"
+                language="English"
+                maxMovies="4"
+                movieDetails="Movie"
+                movieExperience="&lt;p>Deadpool is going to endear a whole new audience to the vivid and weird character, while once again demonstrating the tremendous opportunity for variety in the comic book movie genre.&lt;/p>&#xa;"
+                movieLength="1h 48m"
+                movieName="Deadpool"
+                moviesPath="/content/dam/moviecomponent/Upcoming"
+                note="Wade Wilson (Ryan Reynolds) is a former Special Forces operative who now works as a mercenary. His world comes crashing down when evil scientist Ajax (Ed Skrein) tortures, disfigures and transforms him into Deadpool. The rogue experiment leaves Deadpool with accelerated healing powers and a twisted sense of humor. With help from mutant allies Colossus and Negasonic Teenage Warhead (Brianna Hildebrand), Deadpool uses his new skills to hunt down the man who nearly destroyed his life."
+                productionHouse=" 20th Century Fox, Marvel Entertainment, The Donners' Company"
+                random="Upcoming..."
+                rating="5"
+                releaseDate="February 8, 2016"
+                review1description="Deadpool, much like its source material, is an irreverent, bloody, and riotous twist on the superhero genre - a must-see comic book movie experience"
+                review1person="Ben Kendrick"
+                review2description="The violence may be abundant, but it’s not particularly gratifying, and the repetitive plot mechanics don’t help"
+                review2person="Stephanie Zacharek"
+                reviews="Reviews"
+                video="/content/dam/moviecomponent/trailers/Deadpool.mp4"/>
+        </par>
+    </jcr:content>
+</jcr:root>
