@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0">
+    <scr:component immediate="true" name="org.test.adobeaemclub.core.service.impl.ProjecttServiceImpl" activate="activate">
+        <implementation class="org.test.adobeaemclub.core.service.impl.ProjecttServiceImpl"/>
+        <service servicefactory="false">
+            <provide interface="org.test.adobeaemclub.core.service.ProjectService"/>
+        </service>
+        <property name="service.vendor" value="Adobe"/>
+        <property name="service.pid" value="org.test.adobeaemclub.core.service.impl.ProjecttServiceImpl"/>
+        <reference name="rrfactory" interface="org.apache.sling.api.resource.ResourceResolverFactory" cardinality="1..1" policy="static" bind="bindRrfactory" unbind="unbindRrfactory"/>
+    </scr:component>
+</components>

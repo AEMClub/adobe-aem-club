@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Adobe AEM Club - UI content</comment>
+<entry key="createdBy">Loki</entry>
+<entry key="name">adobeaemclub.ui.content</entry>
+<entry key="created">2016-06-17T00:11:36.307-0700</entry>
+<entry key="groupId">org.test</entry>
+<entry key="version">0.0.1-SNAPSHOT</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">Adobe AEM Club Content Package</entry>
+<entry key="description">UI content package for Adobe AEM Club</entry>
+<entry key="artifactId">adobeaemclub.ui.content</entry>
+<entry key="path">/etc/packages/Adobe AEM Club Content Package/adobeaemclub.ui.content.zip</entry>
+</properties>

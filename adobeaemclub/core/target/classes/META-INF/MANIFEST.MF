@@ -1,0 +1,56 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1468443358946
+Build-Jdk: 1.8.0_91
+Built-By: Loki
+Bundle-Description: Core bundle for Adobe AEM Club
+Bundle-ManifestVersion: 2
+Bundle-Name: Adobe AEM Club - Core
+Bundle-SymbolicName: adobeaemclub-Core
+Bundle-Version: 0.0.1.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.test.adobeaemclub.core.filters;version="0.0.1";uses:
+ ="javax.servlet",org.test.adobeaemclub.core.listeners;version="0.0.1";u
+ ses:="org.osgi.service.event",org.test.adobeaemclub.core.models;version
+ ="0.0.1";uses:="javax.annotation,javax.inject,org.apache.sling.api.reso
+ urce,org.apache.sling.models.annotations",org.test.adobeaemclub.core;ve
+ rsion="1.0",org.test.adobeaemclub.core.schedulers;version="0.0.1",org.t
+ est.adobeaemclub.core.service;version="0.0.1";uses:="com.adobe.cq.proje
+ cts.api,org.apache.sling.api.resource",org.test.adobeaemclub.core.servl
+ ets;version="0.0.1";uses:="javax.servlet,org.apache.sling.api,org.apach
+ e.sling.api.servlets"
+Import-Package: com.adobe.cq.projects.api;version="[0.2,1)",com.day.cq.w
+ cm.msm.api;version="[5.8,6)",javax.annotation,javax.inject;version="[1.
+ 0,2)",javax.jcr;version="[2.0,3)",javax.servlet,org.apache.sling.api;ve
+ rsion="[2.3,3)",org.apache.sling.api.request;version="[2.4,3)",org.apac
+ he.sling.api.resource;version="[2.8,3)",org.apache.sling.api.servlets;v
+ ersion="[2.1,3)",org.apache.sling.commons.osgi;version="[2.2,3)",org.ap
+ ache.sling.models.annotations;version="[1.1,2)",org.apache.sling.settin
+ gs;version="[1.3,2)",org.osgi.service.event;version="[1.2,2)",org.slf4j
+ ;version="[1.5,2)",org.test.adobeaemclub.core.service;version="[0.0,1)"
+Provide-Capability: osgi.service;effective:=active;objectClass="javax.se
+ rvlet.Servlet";service.vendor=Adobe,osgi.service;effective:=active;obje
+ ctClass="org.test.adobeaemclub.core.service.CommerceExample";service.ve
+ ndor=Adobe,osgi.service;effective:=active;objectClass="org.test.adobeae
+ mclub.core.service.MsmExample";service.vendor=Adobe,osgi.service;effect
+ ive:=active;objectClass="org.test.adobeaemclub.core.service.ProjectServ
+ ice";service.vendor=Adobe,osgi.service;effective:=active;objectClass="j
+ ava.lang.Runnable";scheduler.expression="*/30 * * * * ?";scheduler.conc
+ urrent=false;service.vendor=Adobe,osgi.service;effective:=active;object
+ Class="javax.servlet.Filter";service.ranking=-700;sling.filter.scope=RE
+ QUEST;service.vendor=Adobe,osgi.service;effective:=active;objectClass="
+ org.osgi.service.event.EventHandler";event.topics="org/apache/sling/api
+ /resource/Resource/*";service.vendor=Adobe
+Require-Capability: osgi.service;effective:=active;filter:="(objectClass
+ =com.day.cq.wcm.msm.api.LiveRelationshipManager)",osgi.service;effectiv
+ e:=active;filter:="(objectClass=org.apache.sling.api.resource.ResourceR
+ esolverFactory)",osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.6))"
+Service-Component: OSGI-INF/org.test.adobeaemclub.core.filters.LoggingFi
+ lter.xml,OSGI-INF/org.test.adobeaemclub.core.service.impl.MsmExampleImp
+ l.xml,OSGI-INF/org.test.adobeaemclub.core.servlets.SimpleServlet.xml,OS
+ GI-INF/org.test.adobeaemclub.core.service.impl.CommerceExampleImpl.xml,
+ OSGI-INF/org.test.adobeaemclub.core.service.impl.ProjecttServiceImpl.xm
+ l,OSGI-INF/org.test.adobeaemclub.core.schedulers.SimpleScheduledTask.xm
+ l,OSGI-INF/org.test.adobeaemclub.core.listeners.SimpleResourceListener.
+ xml
+Sling-Model-Packages: org.test.adobeaemclub.core
+Tool: Bnd-2.3.0.201405100607

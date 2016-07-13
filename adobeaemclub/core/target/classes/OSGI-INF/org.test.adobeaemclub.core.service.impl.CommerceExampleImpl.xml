@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component name="org.test.adobeaemclub.core.service.impl.CommerceExampleImpl">
+        <implementation class="org.test.adobeaemclub.core.service.impl.CommerceExampleImpl"/>
+        <service servicefactory="false">
+            <provide interface="org.test.adobeaemclub.core.service.CommerceExample"/>
+        </service>
+        <property name="service.vendor" value="Adobe"/>
+        <property name="service.pid" value="org.test.adobeaemclub.core.service.impl.CommerceExampleImpl"/>
+    </scr:component>
+</components>
