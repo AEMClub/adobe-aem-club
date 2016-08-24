@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF/metatype/org.test.commerceexample.core.commerce.TrainingCommerceServiceFactory">
+    <OCD id="org.test.commerceexample.core.commerce.TrainingCommerceServiceFactory" name="%org.test.commerceexample.core.commerce.TrainingCommerceServiceFactory.name" description="%org.test.commerceexample.core.commerce.TrainingCommerceServiceFactory.description">
+        <AD id="commerceProvider" type="String" default="training" name="%org.test.commerceexample.core.commerce.TrainingCommerceServiceFactory.commerceProvider.name" description="%org.test.commerceexample.core.commerce.TrainingCommerceServiceFactory.commerceProvider.description"/>
+    </OCD>
+    <Designate pid="org.test.commerceexample.core.commerce.TrainingCommerceServiceFactory">
+        <Object ocdref="org.test.commerceexample.core.commerce.TrainingCommerceServiceFactory"/>
+    </Designate>
+</metatype:MetaData>

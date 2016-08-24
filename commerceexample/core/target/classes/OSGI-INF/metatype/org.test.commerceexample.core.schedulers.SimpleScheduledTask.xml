@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF/metatype/org.test.commerceexample.core.schedulers.SimpleScheduledTask">
+    <OCD id="org.test.commerceexample.core.schedulers.SimpleScheduledTask" name="%org.test.commerceexample.core.schedulers.SimpleScheduledTask.name" description="%org.test.commerceexample.core.schedulers.SimpleScheduledTask.description">
+        <AD id="scheduler.expression" type="String" default="*/30\ *\ *\ *\ *\ ?" name="%org.test.commerceexample.core.schedulers.SimpleScheduledTask.scheduler.expression.name" description="%org.test.commerceexample.core.schedulers.SimpleScheduledTask.scheduler.expression.description"/>
+        <AD id="scheduler.concurrent" type="Boolean" default="false" name="%org.test.commerceexample.core.schedulers.SimpleScheduledTask.scheduler.concurrent.name" description="%org.test.commerceexample.core.schedulers.SimpleScheduledTask.scheduler.concurrent.description"/>
+        <AD id="myParameter" type="String" name="%org.test.commerceexample.core.schedulers.SimpleScheduledTask.myParameter.name" description="%org.test.commerceexample.core.schedulers.SimpleScheduledTask.myParameter.description"/>
+    </OCD>
+    <Designate pid="org.test.commerceexample.core.schedulers.SimpleScheduledTask">
+        <Object ocdref="org.test.commerceexample.core.schedulers.SimpleScheduledTask"/>
+    </Designate>
+</metatype:MetaData>

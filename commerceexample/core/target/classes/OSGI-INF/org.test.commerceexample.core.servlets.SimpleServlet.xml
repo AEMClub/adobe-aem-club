@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component name="org.test.commerceexample.core.servlets.SimpleServlet">
+        <implementation class="org.test.commerceexample.core.servlets.SimpleServlet"/>
+        <service servicefactory="false">
+            <provide interface="javax.servlet.Servlet"/>
+        </service>
+        <property name="sling.servlet.resourceTypes">
+            commerceexample/structure/page
+        </property>
+        <property name="service.vendor" value="Adobe"/>
+        <property name="service.pid" value="org.test.commerceexample.core.servlets.SimpleServlet"/>
+    </scr:component>
+</components>

@@ -1,0 +1,60 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1471966989997
+Build-Jdk: 1.8.0_77
+Built-By: Loki
+Bundle-Description: Core bundle for CommerceExample
+Bundle-ManifestVersion: 2
+Bundle-Name: CommerceExample - Core
+Bundle-SymbolicName: org.test.commerceexample.core
+Bundle-Version: 0.0.1.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.test.commerceexample.core.commerce;uses:="com.adobe.
+ cq.commerce.api,com.adobe.cq.commerce.api.promotion,com.adobe.cq.commer
+ ce.common,com.day.cq.wcm.api,org.apache.sling.api,org.apache.sling.api.
+ resource";version="0.0.1",org.test.commerceexample.core.filters;uses:="
+ javax.servlet";version="0.0.1",org.test.commerceexample.core.listeners;
+ uses:="org.osgi.service.event";version="0.0.1",org.test.commerceexample
+ .core.models;uses:="javax.annotation,javax.inject,org.apache.sling.api.
+ resource,org.apache.sling.models.annotations";version="0.0.1",org.test.
+ commerceexample.core;version="1.0",org.test.commerceexample.core.schedu
+ lers;version="0.0.1",org.test.commerceexample.core.servlets;uses:="java
+ x.servlet,org.apache.sling.api,org.apache.sling.api.servlets";version="
+ 0.0.1"
+Import-Package: com.adobe.cq.commerce.api;version="[4.0,4.1)",com.adobe.
+ cq.commerce.api.promotion;version="[1.2,2)",com.adobe.cq.commerce.commo
+ n;version="[3.5,4)",com.day.cq.wcm.api;version="[1.17,2)",javax.annotat
+ ion,javax.inject;version="[1.0,2)",javax.servlet,org.apache.sling.api;v
+ ersion="[2.3,3)",org.apache.sling.api.request;version="[2.4,3)",org.apa
+ che.sling.api.resource;version="[2.9,3)",org.apache.sling.api.servlets;
+ version="[2.1,3)",org.apache.sling.commons.osgi;version="[2.4,3)",org.a
+ pache.sling.models.annotations;version="[1.2,2)",org.apache.sling.setti
+ ngs;version="[1.3,2)",org.osgi.service.event;version="[1.2,2)",org.slf4
+ j;version="[1.5,2)"
+Provide-Capability: osgi.service;effective:=active;objectClass="com.adob
+ e.cq.commerce.api.CommerceServiceFactory";service.description="Factory 
+ for training commerce service";commerceProvider=training;service.vendor
+ =Adobe,osgi.service;effective:=active;objectClass="javax.servlet.Servle
+ t";service.vendor=Adobe,osgi.service;effective:=active;objectClass="jav
+ a.lang.Runnable";scheduler.expression="*/30 * * * * ?";scheduler.concur
+ rent=false;service.vendor=Adobe,osgi.service;effective:=active;objectCl
+ ass="javax.servlet.Filter";service.ranking=-700;sling.filter.scope=REQU
+ EST;service.vendor=Adobe,osgi.service;effective:=active;objectClass="or
+ g.osgi.service.event.EventHandler";event.topics="org/apache/sling/api/r
+ esource/Resource/*";service.vendor=Adobe
+Require-Capability: osgi.service;effective:=active;filter:="(objectClass
+ =com.day.cq.wcm.api.LanguageManager)",osgi.service;effective:=active;fi
+ lter:="(objectClass=org.apache.sling.jcr.api.SlingRepository)",osgi.ser
+ vice;effective:=active;filter:="(objectClass=org.apache.sling.settings.
+ SlingSettingsService)",osgi.service;effective:=active;filter:="(objectC
+ lass=com.adobe.granite.security.user.UserPropertiesService)",osgi.servi
+ ce;effective:=active;filter:="(objectClass=com.adobe.cq.commerce.common
+ .CommerceSearchProviderManager)",osgi.ee;filter:="(&(osgi.ee=JavaSE)(ve
+ rsion=1.6))"
+Service-Component: OSGI-INF/org.test.commerceexample.core.schedulers.Sim
+ pleScheduledTask.xml,OSGI-INF/org.test.commerceexample.core.filters.Log
+ gingFilter.xml,OSGI-INF/org.test.commerceexample.core.listeners.SimpleR
+ esourceListener.xml,OSGI-INF/org.test.commerceexample.core.commerce.Tra
+ iningCommerceServiceFactory.xml,OSGI-INF/org.test.commerceexample.core.
+ servlets.SimpleServlet.xml
+Sling-Model-Packages: commerceexample.core
+Tool: Bnd-2.3.0.201405100607

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component immediate="true" name="org.test.commerceexample.core.listeners.SimpleResourceListener">
+        <implementation class="org.test.commerceexample.core.listeners.SimpleResourceListener"/>
+        <service servicefactory="false">
+            <provide interface="org.osgi.service.event.EventHandler"/>
+        </service>
+        <property name="event.topics" value="org/apache/sling/api/resource/Resource/*"/>
+        <property name="service.vendor" value="Adobe"/>
+        <property name="service.pid" value="org.test.commerceexample.core.listeners.SimpleResourceListener"/>
+    </scr:component>
+</components>

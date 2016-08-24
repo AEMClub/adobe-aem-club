@@ -1,0 +1,10 @@
+org\test\commerceexample\core\commerce\TrainingCommerceServiceFactory.class
+org\test\commerceexample\core\package-info.class
+org\test\commerceexample\core\commerce\TrainingCommerceServiceImpl.class
+org\test\commerceexample\core\commerce\TrainingProductImpl.class
+org\test\commerceexample\core\servlets\SimpleServlet.class
+org\test\commerceexample\core\commerce\TrainingCommerceSessionImpl.class
+org\test\commerceexample\core\models\HelloWorldModel.class
+org\test\commerceexample\core\listeners\SimpleResourceListener.class
+org\test\commerceexample\core\filters\LoggingFilter.class
+org\test\commerceexample\core\schedulers\SimpleScheduledTask.class

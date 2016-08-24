@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0">
+    <scr:component name="org.test.commerceexample.core.commerce.TrainingCommerceServiceFactory">
+        <implementation class="org.test.commerceexample.core.commerce.TrainingCommerceServiceFactory"/>
+        <service servicefactory="false">
+            <provide interface="com.adobe.cq.commerce.api.CommerceServiceFactory"/>
+        </service>
+        <property name="service.description" value="Factory for training commerce service"/>
+        <property name="commerceProvider" value="training"/>
+        <property name="service.vendor" value="Adobe"/>
+        <property name="service.pid" value="org.test.commerceexample.core.commerce.TrainingCommerceServiceFactory"/>
+        <reference name="languageManager" interface="com.day.cq.wcm.api.LanguageManager" cardinality="1..1" policy="static" bind="bindLanguageManager" unbind="unbindLanguageManager"/>
+        <reference name="userPropertiesService" interface="com.adobe.granite.security.user.UserPropertiesService" cardinality="1..1" policy="static" bind="bindUserPropertiesService" unbind="unbindUserPropertiesService"/>
+        <reference name="slingSettingsService" interface="org.apache.sling.settings.SlingSettingsService" cardinality="1..1" policy="static" bind="bindSlingSettingsService" unbind="unbindSlingSettingsService"/>
+        <reference name="slingRepository" interface="org.apache.sling.jcr.api.SlingRepository" cardinality="1..1" policy="static" bind="bindSlingRepository" unbind="unbindSlingRepository"/>
+        <reference name="searchProviderManager" interface="com.adobe.cq.commerce.common.CommerceSearchProviderManager" cardinality="1..1" policy="static" bind="bindSearchProviderManager" unbind="unbindSearchProviderManager"/>
+    </scr:component>
+</components>

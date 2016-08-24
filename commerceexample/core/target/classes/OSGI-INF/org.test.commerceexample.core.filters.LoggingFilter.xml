@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component name="org.test.commerceexample.core.filters.LoggingFilter">
+        <implementation class="org.test.commerceexample.core.filters.LoggingFilter"/>
+        <service servicefactory="false">
+            <provide interface="javax.servlet.Filter"/>
+        </service>
+        <property name="service.ranking" type="Integer" value="-700"/>
+        <property name="sling.filter.scope" value="REQUEST"/>
+        <property name="service.vendor" value="Adobe"/>
+        <property name="service.pid" value="org.test.commerceexample.core.filters.LoggingFilter"/>
+    </scr:component>
+</components>
