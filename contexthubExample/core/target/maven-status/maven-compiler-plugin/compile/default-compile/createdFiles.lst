@@ -1,0 +1,8 @@
+org\adoeaemclub\contexthubExample\core\filters\LoggingFilter.class
+org\adoeaemclub\contexthubExample\core\models\HelloWorldModel.class
+org\adoeaemclub\contexthubExample\core\service\ContextHubService.class
+org\adoeaemclub\contexthubExample\core\service\impl\ContextHubServiceImpl.class
+org\adoeaemclub\contexthubExample\core\schedulers\SimpleScheduledTask.class
+org\adoeaemclub\contexthubExample\core\servlets\SimpleServlet.class
+org\adoeaemclub\contexthubExample\core\listeners\SimpleResourceListener.class
+org\adoeaemclub\contexthubExample\core\package-info.class
