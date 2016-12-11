@@ -58,7 +58,6 @@ ResourceResolverFactory resolverFactory;
 		Resource res = rr.getResource("/etc/cloudsettings/default/contexthub");
 		logger.info("Resource : " + res.getName());
 		stores = contexthub.findStores(res);
-		contexthub.
 		logger.info("Size of stores list :" + stores.size());
 		logger.info("---------Store----------");
 		for (Iterator<Store> iterator = stores.iterator(); iterator.hasNext();) {
