@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
-    <filter root="/apps/contexthubexample">
-        <exclude pattern="/apps/contexthubexample/install" />
+    <filter root="/apps/chexample">
+        <exclude pattern="/apps/chexample/install" />
     </filter>
     <filter root="/apps/sling" />
-    <filter root="/etc/designs/contexthubexample"/>
+    <filter root="/etc/designs/chexample"/>
 </workspaceFilter>

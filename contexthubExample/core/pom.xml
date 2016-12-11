@@ -18,15 +18,15 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.adoeaemclub</groupId>
-        <artifactId>contexthubExample</artifactId>
+        <groupId>org.adobeaemclub</groupId>
+        <artifactId>chexample</artifactId>
         <version>0.0.1-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>contexthubExample.core</artifactId>
+    <artifactId>chexample.core</artifactId>
     <packaging>bundle</packaging>
-    <name>ContextHubExample - Core</name>
-    <description>Core bundle for ContextHubExample</description>
+    <name>CHExample - Core</name>
+    <description>Core bundle for CHExample</description>
     <build>
         <plugins>
             <plugin>
@@ -44,12 +44,11 @@
                             artifactId1,
                             artifactId2;inline=true
                         </Embed-Dependency>
-                        
+                        -->
+                        <Bundle-SymbolicName>org.adobeaemclub.chexample.core</Bundle-SymbolicName>
                         <Sling-Model-Packages>
-                            org.adoeaemclub.contexthubExample.core
-                        </Sling-Model-Packages> -->
-                        <Bundle-SymbolicName>ContextHubExample-Core</Bundle-SymbolicName>
-						<Sling-Model-Packages>ContextHubExample.core</Sling-Model-Packages>
+                            org.adobeaemclub.chexample.core
+                        </Sling-Model-Packages>
                     </instructions>
                 </configuration>
             </plugin>
@@ -68,10 +67,10 @@
                         <groupId>org.apache.sling</groupId>
                         <artifactId>maven-sling-plugin</artifactId>
                         <configuration>
-                            <!-- Note that this requires /apps/contexthubexample/install to exist!!          -->
+                            <!-- Note that this requires /apps/chexample/install to exist!!          -->
                             <!--    This is typically the case when ui.apps is deployed first                -->
-                            <!--    Otherwise, create /apps/contexthubexample/install manually (CRXDE|Lite)  -->
-                            <slingUrlSuffix>/apps/contexthubexample/install/</slingUrlSuffix>
+                            <!--    Otherwise, create /apps/chexample/install manually (CRXDE|Lite)  -->
+                            <slingUrlSuffix>/apps/chexample/install/</slingUrlSuffix>
                             <failOnError>true</failOnError>
                         </configuration>
                     </plugin>
@@ -80,6 +79,17 @@
         </profile>
     </profiles>
     <dependencies>
+	    <dependency>
+		    <groupId>org.apache.geronimo.specs</groupId>
+		    <artifactId>geronimo-atinject_1.0_spec</artifactId>
+		    <version>1.0</version>
+		    <scope>provided</scope>
+		</dependency>	
+		<dependency>
+            <groupId>com.adobe.aem</groupId>
+            <artifactId>uber-jar</artifactId>
+            <classifier>obfuscated-apis</classifier>
+        </dependency>	
         <!-- OSGi Dependencies -->
         <dependency>
             <groupId>org.apache.felix</groupId>
@@ -134,21 +144,5 @@
             <groupId>junit-addons</groupId>
             <artifactId>junit-addons</artifactId>
         </dependency>
-        <dependency>
-		        <groupId>org.apache.geronimo.specs</groupId>
-		        <artifactId>geronimo-atinject_1.0_spec</artifactId>
-		        <scope>provided</scope>
-		    </dependency>
-		    <dependency>
-		        <groupId>javax.inject</groupId>
-		        <artifactId>javax.inject</artifactId>
-		   </dependency> 
-           <dependency>
-				<groupId>com.adobe.aem</groupId>
-				<artifactId>uber-jar</artifactId>				
-				<scope>provided</scope>
-				<classifier>obfuscated-apis</classifier>
-			</dependency>
-        
     </dependencies>
 </project>

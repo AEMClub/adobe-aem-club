@@ -1,8 +1,8 @@
-org\adoeaemclub\contexthubExample\core\filters\LoggingFilter.class
-org\adoeaemclub\contexthubExample\core\models\HelloWorldModel.class
-org\adoeaemclub\contexthubExample\core\service\ContextHubService.class
-org\adoeaemclub\contexthubExample\core\service\impl\ContextHubServiceImpl.class
-org\adoeaemclub\contexthubExample\core\schedulers\SimpleScheduledTask.class
-org\adoeaemclub\contexthubExample\core\servlets\SimpleServlet.class
-org\adoeaemclub\contexthubExample\core\listeners\SimpleResourceListener.class
-org\adoeaemclub\contexthubExample\core\package-info.class
+org\adobeaemclub\chexample\core\service\ContextHubService.class
+org\adobeaemclub\chexample\core\filters\LoggingFilter.class
+org\adobeaemclub\chexample\core\servlets\SimpleServlet.class
+org\adobeaemclub\chexample\core\service\impl\ContextHubServiceImpl.class
+org\adobeaemclub\chexample\core\models\HelloWorldModel.class
+org\adobeaemclub\chexample\core\listeners\SimpleResourceListener.class
+org\adobeaemclub\chexample\core\package-info.class
+org\adobeaemclub\chexample\core\schedulers\SimpleScheduledTask.class

@@ -21,8 +21,8 @@
     <!-- P A R E N T  P R O J E C T  D E S C R I P T I O N                      -->
     <!-- ====================================================================== -->
     <parent>
-        <groupId>org.adoeaemclub</groupId>
-        <artifactId>contexthubExample</artifactId>
+        <groupId>org.adobeaemclub</groupId>
+        <artifactId>chexample</artifactId>
         <version>0.0.1-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
@@ -30,10 +30,10 @@
     <!-- ====================================================================== -->
     <!-- P R O J E C T  D E S C R I P T I O N                                   -->
     <!-- ====================================================================== -->
-    <artifactId>contexthubExample.it.tests</artifactId>
+    <artifactId>chexample.it.tests</artifactId>
     <packaging>bundle</packaging>
-    <name>ContextHubExample - Integration Tests Bundles</name>
-    <description>Bundles for Integration Tests for ContextHubExample</description>
+    <name>CHExample - Integration Tests Bundles</name>
+    <description>Bundles for Integration Tests for CHExample</description>
 
     <!-- <scm>
         <connection></connection>
@@ -99,8 +99,8 @@
         </dependency>
 
         <dependency>
-            <groupId>org.adoeaemclub</groupId>
-            <artifactId>contexthubExample.core</artifactId>
+            <groupId>org.adobeaemclub</groupId>
+            <artifactId>chexample.core</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <type>bundle</type>
             <scope>provided</scope>

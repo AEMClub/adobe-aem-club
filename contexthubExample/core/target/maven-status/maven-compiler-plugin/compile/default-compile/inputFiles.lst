@@ -1,8 +1,8 @@
-C:\Users\Loki\workspace\contexthubExample\core\src\main\java\org\adoeaemclub\contexthubExample\core\schedulers\SimpleScheduledTask.java
-C:\Users\Loki\workspace\contexthubExample\core\src\main\java\org\adoeaemclub\contexthubExample\core\listeners\SimpleResourceListener.java
-C:\Users\Loki\workspace\contexthubExample\core\src\main\java\org\adoeaemclub\contexthubExample\core\models\HelloWorldModel.java
-C:\Users\Loki\workspace\contexthubExample\core\src\main\java\org\adoeaemclub\contexthubExample\core\service\impl\ContextHubServiceImpl.java
-C:\Users\Loki\workspace\contexthubExample\core\src\main\java\org\adoeaemclub\contexthubExample\core\servlets\SimpleServlet.java
-C:\Users\Loki\workspace\contexthubExample\core\src\main\java\org\adoeaemclub\contexthubExample\core\package-info.java
-C:\Users\Loki\workspace\contexthubExample\core\src\main\java\org\adoeaemclub\contexthubExample\core\service\ContextHubService.java
-C:\Users\Loki\workspace\contexthubExample\core\src\main\java\org\adoeaemclub\contexthubExample\core\filters\LoggingFilter.java
+C:\Users\Loki\workspace\chexample\core\src\main\java\org\adobeaemclub\chexample\core\models\HelloWorldModel.java
+C:\Users\Loki\workspace\chexample\core\src\main\java\org\adobeaemclub\chexample\core\schedulers\SimpleScheduledTask.java
+C:\Users\Loki\workspace\chexample\core\src\main\java\org\adobeaemclub\chexample\core\filters\LoggingFilter.java
+C:\Users\Loki\workspace\chexample\core\src\main\java\org\adobeaemclub\chexample\core\package-info.java
+C:\Users\Loki\workspace\chexample\core\src\main\java\org\adobeaemclub\chexample\core\listeners\SimpleResourceListener.java
+C:\Users\Loki\workspace\chexample\core\src\main\java\org\adobeaemclub\chexample\core\servlets\SimpleServlet.java
+C:\Users\Loki\workspace\chexample\core\src\main\java\org\adobeaemclub\chexample\core\service\ContextHubService.java
+C:\Users\Loki\workspace\chexample\core\src\main\java\org\adobeaemclub\chexample\core\service\impl\ContextHubServiceImpl.java

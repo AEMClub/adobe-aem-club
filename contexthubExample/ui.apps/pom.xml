@@ -21,8 +21,8 @@
     <!-- P A R E N T  P R O J E C T  D E S C R I P T I O N                      -->
     <!-- ====================================================================== -->
     <parent>
-        <groupId>org.adoeaemclub</groupId>
-        <artifactId>contexthubExample</artifactId>
+        <groupId>org.adobeaemclub</groupId>
+        <artifactId>chexample</artifactId>
         <version>0.0.1-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
@@ -30,10 +30,10 @@
     <!-- ====================================================================== -->
     <!-- P R O J E C T  D E S C R I P T I O N                                   -->
     <!-- ====================================================================== -->
-    <artifactId>contexthubExample.ui.apps</artifactId>
+    <artifactId>chexample.ui.apps</artifactId>
     <packaging>content-package</packaging>
-    <name>ContextHubExample - UI apps</name>
-    <description>UI apps package for ContextHubExample</description>
+    <name>CHExample - UI apps</name>
+    <description>UI apps package for CHExample</description>
 
     <!-- <scm>
         <connection></connection>
@@ -118,12 +118,12 @@
                     <filterSource>${basedir}/META-INF/vault/filter.xml</filterSource>
                     <verbose>true</verbose>
                     <failOnError>true</failOnError>
-                    <group>ContextHubExample Content Package</group>
+                    <group>CHExample Content Package</group>
                     <embeddeds>
                         <embedded>
-                            <groupId>org.adoeaemclub</groupId>
-                            <artifactId>contexthubExample.core</artifactId>
-                            <target>/apps/contexthubexample/install</target>
+                            <groupId>org.adobeaemclub</groupId>
+                            <artifactId>chexample.core</artifactId>
+                            <target>/apps/chexample/install</target>
                         </embedded>
                     </embeddeds>
                 </configuration>
@@ -196,8 +196,8 @@
     <!-- ====================================================================== -->
     <dependencies>
         <dependency>
-            <groupId>org.adoeaemclub</groupId>
-            <artifactId>contexthubExample.core</artifactId>
+            <groupId>org.adobeaemclub</groupId>
+            <artifactId>chexample.core</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 

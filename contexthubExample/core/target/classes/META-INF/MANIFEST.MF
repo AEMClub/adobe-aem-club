@@ -1,51 +1,50 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1479324711081
+Bnd-LastModified: 1481494971119
 Build-Jdk: 1.8.0_91
 Built-By: Loki
-Bundle-Description: Core bundle for ContextHubExample
+Bundle-Description: Core bundle for CHExample
 Bundle-ManifestVersion: 2
-Bundle-Name: ContextHubExample - Core
-Bundle-SymbolicName: ContextHubExample-Core
+Bundle-Name: CHExample - Core
+Bundle-SymbolicName: org.adobeaemclub.chexample.core
 Bundle-Version: 0.0.1.SNAPSHOT
 Created-By: Apache Maven Bundle Plugin
-Export-Package: org.adoeaemclub.contexthubExample.core.filters;version="
- 0.0.1";uses:="javax.servlet",org.adoeaemclub.contexthubExample.core.lis
- teners;version="0.0.1";uses:="org.osgi.service.event",org.adoeaemclub.c
- ontexthubExample.core.models;version="0.0.1";uses:="javax.annotation,ja
- vax.inject,org.apache.sling.api.resource,org.apache.sling.models.annota
- tions",org.adoeaemclub.contexthubExample.core;version="1.0",org.adoeaem
- club.contexthubExample.core.schedulers;version="0.0.1",org.adoeaemclub.
- contexthubExample.core.service;version="0.0.1",org.adoeaemclub.contexth
- ubExample.core.servlets;version="0.0.1";uses:="javax.servlet,org.apache
- .sling.api,org.apache.sling.api.servlets"
-Import-Package: com.adobe.granite.contexthub.api;version="[3.0,4)",javax
- .annotation,javax.inject;version="[0.0,1)",javax.servlet,org.adoeaemclu
- b.contexthubExample.core.service;version="[0.0,1)",org.apache.sling.api
- ;version="[2.3,3)",org.apache.sling.api.request;version="[2.4,3)",org.a
- pache.sling.api.resource;version="[2.5,3)",org.apache.sling.api.servlet
- s;version="[2.1,3)",org.apache.sling.commons.osgi;version="[2.2,3)",org
- .apache.sling.models.annotations;version="[1.0,2)",org.apache.sling.set
- tings;version="[1.3,2)",org.osgi.service.event;version="[1.2,2)",org.sl
- f4j;version="[1.5,2)"
+Export-Package: org.adobeaemclub.chexample.core.filters;version="0.0.1";
+ uses:="javax.servlet",org.adobeaemclub.chexample.core.listeners;version
+ ="0.0.1";uses:="org.osgi.service.event",org.adobeaemclub.chexample.core
+ .models;version="0.0.1";uses:="javax.annotation,javax.inject,org.apache
+ .sling.api.resource,org.apache.sling.models.annotations",org.adobeaemcl
+ ub.chexample.core;version="1.0",org.adobeaemclub.chexample.core.schedul
+ ers;version="0.0.1",org.adobeaemclub.chexample.core.service;version="0.
+ 0.1",org.adobeaemclub.chexample.core.servlets;version="0.0.1";uses:="ja
+ vax.servlet,org.apache.sling.api,org.apache.sling.api.servlets"
+Import-Package: com.adobe.granite.contexthub.api;version="[9.0,10)",java
+ x.annotation,javax.inject;version="[1.0,2)",javax.servlet,org.adobeaemc
+ lub.chexample.core.service;version="[0.0,1)",org.apache.sling.api;versi
+ on="[2.3,3)",org.apache.sling.api.request;version="[2.4,3)",org.apache.
+ sling.api.resource;version="[2.9,3)",org.apache.sling.api.servlets;vers
+ ion="[2.1,3)",org.apache.sling.commons.osgi;version="[2.4,3)",org.apach
+ e.sling.models.annotations;version="[1.2,2)",org.apache.sling.settings;
+ version="[1.3,2)",org.osgi.service.event;version="[1.2,2)",org.slf4j;ve
+ rsion="[1.5,2)"
 Provide-Capability: osgi.service;effective:=active;objectClass="javax.se
  rvlet.Servlet";service.vendor=Adobe,osgi.service;effective:=active;obje
- ctClass="org.adoeaemclub.contexthubExample.core.service.ContextHubServi
- ce";service.vendor=Adobe,osgi.service;effective:=active;objectClass="ja
- va.lang.Runnable";scheduler.expression="*/30 * * * * ?";scheduler.concu
- rrent=false;service.vendor=Adobe,osgi.service;effective:=active;objectC
- lass="javax.servlet.Filter";service.ranking=-700;sling.filter.scope=REQ
- UEST;service.vendor=Adobe,osgi.service;effective:=active;objectClass="o
- rg.osgi.service.event.EventHandler";event.topics="org/apache/sling/api/
- resource/Resource/*";service.vendor=Adobe
+ ctClass="java.lang.Runnable";scheduler.expression="*/30 * * * * ?";sche
+ duler.concurrent=false;service.vendor=Adobe,osgi.service;effective:=act
+ ive;objectClass="javax.servlet.Filter";service.ranking=-700;sling.filte
+ r.scope=REQUEST;service.vendor=Adobe,osgi.service;effective:=active;obj
+ ectClass="org.osgi.service.event.EventHandler";event.topics="org/apache
+ /sling/api/resource/Resource/*";service.vendor=Adobe,osgi.service;effec
+ tive:=active;objectClass="org.adobeaemclub.chexample.core.service.Conte
+ xtHubService";service.vendor=Adobe
 Require-Capability: osgi.service;effective:=active;filter:="(objectClass
  =org.apache.sling.api.resource.ResourceResolverFactory)",osgi.service;e
  ffective:=active;filter:="(objectClass=com.adobe.granite.contexthub.api
  .ContextHub)",osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.6))"
-Service-Component: OSGI-INF/org.adoeaemclub.contexthubExample.core.filte
- rs.LoggingFilter.xml,OSGI-INF/org.adoeaemclub.contexthubExample.core.sc
- hedulers.SimpleScheduledTask.xml,OSGI-INF/org.adoeaemclub.contexthubExa
- mple.core.service.impl.ContextHubServiceImpl.xml,OSGI-INF/org.adoeaemcl
- ub.contexthubExample.core.listeners.SimpleResourceListener.xml,OSGI-INF
- /org.adoeaemclub.contexthubExample.core.servlets.SimpleServlet.xml
-Sling-Model-Packages: ContextHubExample.core
+Service-Component: OSGI-INF/org.adobeaemclub.chexample.core.listeners.Si
+ mpleResourceListener.xml,OSGI-INF/org.adobeaemclub.chexample.core.sched
+ ulers.SimpleScheduledTask.xml,OSGI-INF/org.adobeaemclub.chexample.core.
+ servlets.SimpleServlet.xml,OSGI-INF/org.adobeaemclub.chexample.core.fil
+ ters.LoggingFilter.xml,OSGI-INF/org.adobeaemclub.chexample.core.service
+ .impl.ContextHubServiceImpl.xml
+Sling-Model-Packages: org.adobeaemclub.chexample.core
 Tool: Bnd-2.3.0.201405100607

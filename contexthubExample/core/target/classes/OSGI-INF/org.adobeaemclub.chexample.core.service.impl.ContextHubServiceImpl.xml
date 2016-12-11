@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0">
+    <scr:component immediate="true" name="org.adobeaemclub.chexample.core.service.impl.ContextHubServiceImpl" activate="activate">
+        <implementation class="org.adobeaemclub.chexample.core.service.impl.ContextHubServiceImpl"/>
+        <service servicefactory="false">
+            <provide interface="org.adobeaemclub.chexample.core.service.ContextHubService"/>
+        </service>
+        <property name="service.vendor" value="Adobe"/>
+        <property name="service.pid" value="org.adobeaemclub.chexample.core.service.impl.ContextHubServiceImpl"/>
+        <reference name="contexthub" interface="com.adobe.granite.contexthub.api.ContextHub" cardinality="1..1" policy="static" bind="bindContexthub" unbind="unbindContexthub"/>
+        <reference name="resolverFactory" interface="org.apache.sling.api.resource.ResourceResolverFactory" cardinality="1..1" policy="static" bind="bindResolverFactory" unbind="unbindResolverFactory"/>
+    </scr:component>
+</components>

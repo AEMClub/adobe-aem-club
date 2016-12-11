@@ -1,19 +1,18 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1477866194909
+Bnd-LastModified: 1477894432804
 Build-Jdk: 1.8.0_91
 Built-By: Loki
-Bundle-Description: Bundles for Integration Tests for ContextHubExample
+Bundle-Description: Bundles for Integration Tests for CHExample
 Bundle-ManifestVersion: 2
-Bundle-Name: ContextHubExample - Integration Tests Bundles
-Bundle-SymbolicName: org.adoeaemclub.contexthubExample.it.tests
+Bundle-Name: CHExample - Integration Tests Bundles
+Bundle-SymbolicName: org.adobeaemclub.chexample.it.tests
 Bundle-Version: 0.0.1.SNAPSHOT
 Created-By: Apache Maven Bundle Plugin
-Export-Package: org.adoeaemclub.contexthubExample.it.tests;uses:="org.ap
- ache.sling.junit.annotations,org.junit,org.junit.runner";version="0.0.1
- "
-Import-Package: org.adoeaemclub.contexthubExample.core.models;version="[
- 0.0,1)",org.apache.sling.junit.annotations;version="[1.0,2)",org.apache
- .sling.settings;version="[1.3,2)",org.junit,org.junit.runner
+Export-Package: org.adobeaemclub.chexample.it.tests;uses:="org.apache.sl
+ ing.junit.annotations,org.junit,org.junit.runner";version="0.0.1"
+Import-Package: org.adobeaemclub.chexample.core.models;version="[0.0,1)"
+ ,org.apache.sling.junit.annotations;version="[1.0,2)",org.apache.sling.
+ settings;version="[1.3,2)",org.junit,org.junit.runner
 Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.6))"
 Sling-Test-Regexp: .*Test
 Tool: Bnd-2.3.0.201405100607
