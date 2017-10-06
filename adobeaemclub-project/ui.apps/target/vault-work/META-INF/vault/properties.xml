@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>AdobeAEMClub Project Content Package</comment>
+<entry key="createdBy">sm47824</entry>
+<entry key="name">adobeaemclub-project.ui.apps</entry>
+<entry key="created">2017-09-19T15:21:45.962-0400</entry>
+<entry key="groupId">com.aac</entry>
+<entry key="version">0.0.1-SNAPSHOT</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">my-packages</entry>
+<entry key="description">Maven Multimodule project for AdobeAEMClub Project.</entry>
+<entry key="artifactId">adobeaemclub-project.ui.apps</entry>
+<entry key="path">/etc/packages/my-packages/adobeaemclub-project.ui.apps.zip</entry>
+</properties>
