@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/adobeaemclub-project" />
+    <filter root="/conf/adobeaemclub-project" mode="merge" />
+    <filter root="/etc/clientlibs/adobeaemclub-project" />
+    <filter root="/etc/designs/adobeaemclub-project">
+        <include pattern="/etc/designs/adobeaemclub-project/jcr:content" />
+    </filter>
+</workspaceFilter>

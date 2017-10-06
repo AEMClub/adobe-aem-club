@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1507250644063
+Build-Jdk: 1.8.0_144
+Built-By: sm47824
+Bundle-Description: Maven Multimodule project for AdobeAEMClub Project.
+Bundle-ManifestVersion: 2
+Bundle-Name: AdobeAEMClub Project Bundle
+Bundle-SymbolicName: com.aac.adobeaemclub-project
+Bundle-Version: 0.0.1.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Sling-Model-Packages: com.aac.models
+Tool: Bnd-2.3.0.201405100607
